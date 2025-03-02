@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- FontAwesome for icons -->
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <i class="fas fa-calendar-alt"></i>
+          <span>EventFlow</span>
+        </div>
+        <a href="#" class="about-btn">About</a>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <!-- Blurry Background Effect -->
+    <div class="container">
+      <div class="image-section">
+        <img src="monica-sauro-_wkpq7zOjyc-unsplash.jpg" alt="Signup Image" />
+      </div>
+
+      <div class="form-section">
+        <form action="login.php" method="POST">
+          <h2>Login</h2>
+
+          <label for="username_or_email">Email/Username</label>
+          <input type="text" id="username_or_email" name="username_or_email" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button id="login-button" type="submit">Login</button>
+          <div id="register-link">
+            <p>
+              Don't have an account? <a href="register.html">Register here</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2025 EventFlow. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

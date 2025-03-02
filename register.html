@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- FontAwesome for icons -->
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <i class="fas fa-calendar-alt"></i>
+          <span>EventFlow</span>
+        </div>
+        <a href="#" class="about-btn">About</a>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <!-- Blurry Background Effect -->
+    <div class="container">
+      <div class="image-section">
+        <img src="monica-sauro-_wkpq7zOjyc-unsplash.jpg" alt="Signup Image" />
+      </div>
+
+      <div class="form-section">
+        <form action="register.php" method="POST">
+          <h2>Register</h2>
+
+          <label for="fullname">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="username"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+          />
+
+          <button id="register-button" type="submit">Create Account</button>
+          <div id="login-link">
+            <p>Already a user? <a href="login.html">Login here</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2025 EventFlow. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

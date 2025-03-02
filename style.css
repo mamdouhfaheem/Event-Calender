@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: url("towfiqu-barbhuiya-bwOAixLG0uc-unsplash.jpg") no-repeat center
+    center/cover; /* Background Image */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header/Nav Bar */
+.navbar {
+  width: 100%; /* Stretch across full width */
+  display: flex;
+  justify-content: center; /* Space out logo and button */
+  align-items: center;
+  padding: 15px 0px;
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it starts from the very left */
+  z-index: 100;
+}
+
+.nav-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo & Title */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.logo i {
+  color: #007bff; /* Blue color for the icon */
+  font-size: 22px;
+  margin-right: 8px;
+}
+
+/* "About" Button */
+.about-btn {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Overlay to create blur effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Blur effect */
+  background: rgba(0, 0, 0, 0.3); /*Dark overlay for better contrast*/
+  z-index: 0;
+  margin-bottom: 60px;
+}
+
+/* Form Container */
+.container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.3); /* Transparent white background */
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 750px;
+  height: auto;
+  max-height: 90vh;
+  text-align: center;
+  backdrop-filter: blur(15px); /* Blur effect inside the container */
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Image Section */
+.image-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Form Section */
+.form-section {
+  width: 50%;
+  /* padding: 20px; */
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Header */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+/* Input Fields */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  display: block;
+  margin: 0 auto 15px auto;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+#register-button {
+  width: 100%;
+  background-color: #91f4ff;
+  color: rgb(23, 70, 68);
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #b1f3ff;
+}
+
+.login-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on top */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .image-section {
+    display: none;
+  }
+
+  .container .form-section {
+    width: 100%;
+  }
+}
